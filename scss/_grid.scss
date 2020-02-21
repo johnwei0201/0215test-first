@@ -1,0 +1,78 @@
+.full-width {
+    width: 100%;
+}
+@each $size,$w in $breakpoints {
+    // @for $i from 1 through $grid {
+    //     .col-#{$size}-#{$i}{
+    //         width: 100% / $grid * $i;
+    //     } 
+    // }
+    
+    @media(min-width:$w){
+        .fixed-width {
+            @if($size == all){
+                width: 100%;
+            }
+            @else{
+                width: $w;
+            }
+            margin: auto;
+        }
+        
+        @for $i from 1 through $grid {
+            @if($size == all){
+                .col-#{$i}{
+                    width: 100% / $grid * $i;
+                    float: left;
+                    padding: $col-padding;
+                }
+            }
+            @else{
+                .col-#{$size}-#{$i}{
+                    padding: $col-padding;
+                    width: 100% / $grid * $i;
+                    float: left;
+                }
+            }
+        }
+        @each $d in $displays {
+            @if($size == all){
+                .d-#{$d}{
+                    display: $d;
+                }
+            }
+            @else{
+                .d-#{$size}-#{$d}{
+                    display: $d;
+                }
+            }
+        }
+    }
+}
+
+
+@mixin all(){
+    @media (min-width:0){
+        @content;
+    }
+}
+@mixin sm(){
+    @media (min-width:map-get($breakpoints,sm)){
+        @content;
+    }
+}
+@mixin md(){
+    @media (min-width:map-get($breakpoints,md)){
+        @content;
+    }   
+}
+@mixin lg(){
+    @media (min-width:map-get($breakpoints,lg)){
+        @content;
+    }
+}
+@mixin xl(){
+    @media (min-width:map-get($breakpoints,xl)){
+        @content;
+    }
+}

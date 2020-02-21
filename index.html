@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css
+    ">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <nav class="full-width bg-blue">
+        <div class="fixed-width clearfix">
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+            <div class="menu">
+                <a href="#">link 1</a>
+                <a href="#">link 1</a>
+                <a href="#">link 1</a>
+                <a href="#">link 1</a>
+                <a href="#">link 1</a>
+            </div>
+        </div>
+    </nav>
+    <!-- <header class="full-width" style="background-image: url('https://picsum.photos/id/123/1600/600')">
+        <div class="fixed-width">
+            <h1>TITLE</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis officia veritatis minus.
+            </p>
+            <a href="#">LINK</a>
+        </div>
+    </header> -->
+    <!-- <header class="full-width">
+        <div class="wrapper">
+            <div class="content">
+                <h1>title</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sapiente vero, alias ratione
+                    aperiam
+                    repellat, ducimus voluptas tempore deserunt, doloribus soluta officiis architecto libero ex. In, a?
+                    Nisi, illo modi.
+                </p>
+            </div>
+        </div>
+        <img src="https://picsum.photos/id/22/1600/600" alt="">
+    </header> -->
+    <div id="banner" class="full-width owl-carousel owl-theme">
+        <img src="https://picsum.photos/id/22/1600/600" alt="">
+        <img src="https://picsum.photos/id/122/1600/600" alt="">
+        <img src="https://picsum.photos/id/212/1600/600" alt="">
+        <img src="https://picsum.photos/id/221/1600/600" alt="">
+    </div>
+    <div id="about" class="full-width">
+        <div class="fixed-width vam">
+            <div class="col-sm-6 col-12">
+                <h2>TITLE</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias autem nobis quos, laudantium nam, deserunt ut quam hic sit, libero quaerat dicta enim sequi nisi? Consectetur temporibus sit earum blanditiis.
+                </p>
+            </div>
+            <div class="col-sm-6 col-12">
+                <img src="https://picsum.photos/id/12/800/600" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="service" class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-12">
+                <h2>SERVICE</h2>
+            </div>
+            <div class="col-sm-4 col-12">
+                <img src="https://picsum.photos/id/44/300" alt="">
+                <span>images</span>
+            </div>
+            <div class="col-sm-4 col-12">
+                <img src="https://picsum.photos/id/44/300" alt="">
+            </div>
+            <div class="col-sm-4 col-12">
+                <img src="https://picsum.photos/id/44/300" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="full-width">
+        <div class="fixed-width">
+            <div class="col-12">
+                <form action="">
+                    <div class="form-control">
+                        <label for="">姓名</label>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div  class="form-control">
+                        <label for="">電話</label>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div  class="form-control">
+                        <label for="">Email</label>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="pretty p-switch">
+                        <input type="checkbox" />
+                        <div class="state p-danger">
+                            <label>Check</label>
+                        </div>
+                    </div>
+                    <div class="pretty p-icon p-round p-jelly">
+                        <input type="checkbox" />
+                        <div class="state p-primary">
+                            <label>Interested</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-red" value="送出">
+                    <input type="reset" class="btn btn-blue" value="重設">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#banner').owlCarousel({
+                items: 1,
+                autoplay: true,
+                loop: true,
+                // margin: 15,
+                // nav: true,
+                autoplayTimeout: 4500,
+                autoplaySpeed: 1500,
+            });
+        })
+    </script>
+</body>
+
+</html>

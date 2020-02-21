@@ -1,0 +1,119 @@
+nav {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    .logo {
+        float: left;
+    }
+    .menu {
+        float: right; 
+        a {
+            border-radius: 5px;
+            &:hover {
+                background-color: #fff127;
+                color: #000;
+                
+            }
+        }
+    }
+    a {
+        display: inline-block;
+        padding: 6px 5px;
+        // height: 50px;
+        // line-height: 50px;
+        text-decoration: none;
+        color: #fff;
+        transition: .3s;
+        
+    }
+    
+}
+// header {
+//     // background-image: url("https://picsum.photos/id/123/1600/600");
+//     background-size: cover;
+//     background-position: center;
+//     // height: 600px;
+//     padding-top: 250px;
+//     padding-bottom: 250px;
+//     text-align: center;
+// }
+header {
+    position: relative;
+    height: 0;
+    padding-bottom: 37.5%;
+    .wrapper {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        // background: #faa;
+        .content {
+            width: 600px;
+        }
+    }
+}
+// owl-carousel custom css
+.owl-theme .owl-nav.disabled+.owl-dots  {
+    margin-top: -30px!important;
+    z-index: 999;
+    position: relative;
+}
+// #about {
+//     font-size: 0;
+// }
+// #about .col-sm-6{
+//     display: inline-block;
+//     vertical-align: middle;
+//     font-size: 16px;
+//     float: none!important;
+// }
+#about {
+    // padding-top: 50px;
+    // padding-bottom: 50px;
+    // @include sm(){
+    //     padding-top: 100px;
+    //     padding-bottom: 100px;
+    // }
+    @include p();
+}
+#service {
+    background: #ffc4c4;
+    @include p();
+}
+
+.form-control {
+    margin-bottom: 15px;
+    font-size: 0;
+    > * {
+        font-size: 16px;
+    }
+}
+
+
+input[type="text"] {
+    // border:0;
+    // border-bottom: 1px solid #666;
+    border: 1px solid #999;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    outline: 0;
+    transition: .3s;
+    color: #fa0;
+}
+label {
+    width: 10%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-control div {
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+}
+input[type="text"]:focus {
+    border: 1px solid #4aca00;
+    // border-bottom: 1px solid #fa9;
+    background: #dddddd;
+}
